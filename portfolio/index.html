@@ -2,7 +2,7 @@
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Thu Jan 23 2025 12:47:27 GMT+0000 (Coordinated Universal Time) -->
 <html
     data-wf-domain="loisg-passion-site.webflow.io"
-    data-wf-page="6790f8ea25bfd6df474d1ed5"
+    data-wf-page="6790f8ea25bfd6df474d1ed4"
     data-wf-site="6790f8ea25bfd6df474d1e7c"
     data-wf-status="1"
     lang="en"
@@ -43,6 +43,12 @@
             type="text/css"
         />
         <style>
+            .work-card-paragraph{
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
             .menu-button.w--open{
                 background-color: #516cf7;
             }
@@ -78,7 +84,7 @@
         >
             <div class="container container-large w-container">
                 <div class="navbar-component">
-                    <a href="../" data-w-id="a17e70f0-b7f8-c939-84ae-3d2ab1127700" class="brand w-nav-brand"
+                    <a href="../" data-w-id="f7791612-d725-23b5-98bf-ac6e76a31707" class="brand w-nav-brand"
                         ><img
                             loading="lazy"
                             src="https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67911008443bcf5f6f31fd9a_LoiSG.svg"
@@ -86,9 +92,9 @@
                     /></a>
                     <div class="nav-menu-wrap">
                         <div class="right-navbar-content">
-                            <a href="../portfolio/" class="link-block-navbar w-inline-block"
+                            <a href="./" aria-current="page" class="link-block-navbar w-inline-block w--current"
                                 ><div class="text-weight-medium">Portifolio</div></a
-                            ><a href="./" aria-current="page" class="link-block-navbar w-inline-block w--current"
+                            ><a href="../contact/" class="link-block-navbar w-inline-block"
                                 ><div class="text-weight-medium">Contact</div></a
                             >
                         </div>
@@ -99,9 +105,9 @@
                                 </div>
                             </div>
                             <nav role="navigation" class="nav-menu w-nav-menu">
-                                <a href="../portfolio/" class="nav-link w-inline-block"
+                                <a href="./" aria-current="page" class="nav-link w-inline-block w--current"
                                     ><div class="text-weight-medium">Portifolio</div></a
-                                ><a href="./" aria-current="page" class="nav-link w-inline-block w--current"
+                                ><a href="../contact/" class="nav-link w-inline-block"
                                     ><div class="text-weight-medium">Contact</div></a
                                 >
                             </nav>
@@ -110,82 +116,96 @@
                 </div>
             </div>
         </div>
-        <section class="hero-form">
+        <section class="hero-section">
             <div class="w-layout-blockcontainer container w-container">
-                <div class="hero-header">
-                    <div class="heading smaller"><h1 class="heading-1">Let’s bring your vision to life</h1></div>
+                <div class="hero-works">
+                    <div class="works-header"><h1 class="heading-1">Where vision meets excellence</h1></div>
                 </div>
-                <div id="w-node-_5c64fd59-e60c-43c9-4377-2270cc85a2d2-474d1ed5" class="form-component">
-                    <div
-                        id="w-node-a51d9b64-bbeb-b439-510d-97f8f4a7d334-474d1ed5"
-                        data-w-id="a51d9b64-bbeb-b439-510d-97f8f4a7d334"
-                        style="opacity: 0"
-                        class="form-wrapper full-width w-form"
-                    >
-                        <form
-                            id="email-form"
-                            name="email-form"
-                            data-name="Email Form"
-                            method="get"
-                            class="form"
-                            data-wf-page-id="6790f8ea25bfd6df474d1ed5"
-                            data-wf-element-id="a51d9b64-bbeb-b439-510d-97f8f4a7d335"
-                        >
-                            <div class="form-content">
-                                <div class="name-wrapper-contact">
-                                    <label for="name" class="text-size-medium-vw">Name</label
-                                    ><input
-                                        class="text-field-contact w-input"
-                                        maxlength="256"
-                                        name="name-2"
-                                        data-name="Name 2"
-                                        placeholder="Enter your name"
-                                        type="text"
-                                        id="name-2"
-                                        required=""
-                                    />
-                                </div>
-                                <div class="name-wrapper-contact">
-                                    <label for="Enter-your-e-mail" class="text-size-medium-vw">E-mail</label
-                                    ><input
-                                        class="text-field-contact w-input"
-                                        maxlength="256"
-                                        name="Enter-your-e-mail-2"
-                                        data-name="Enter Your E Mail 2"
-                                        placeholder="Enter your e-mail"
-                                        type="email"
-                                        id="Enter-your-e-mail-2"
-                                        required=""
-                                    />
-                                </div>
-                                <label for="field" class="text-size-medium-vw">Message</label
-                                ><textarea
-                                    id="field-2"
-                                    name="field-2"
-                                    maxlength="5000"
-                                    data-name="Field 2"
-                                    placeholder="Your message..."
-                                    class="text-field-contact w-input"
-                                ></textarea>
-                            </div>
-                            <div class="contact-button align-center">
-                                <div href="#" class="button-primary">
-                                    <input
-                                        type="submit"
-                                        data-wait="Please wait..."
-                                        class="submit-button w-button"
-                                        value="Submit"
-                                    />
-                                    <div class="text-weight-medium caps">submit</div>
+            </div>
+        </section>
+        <section>
+            <div class="w-layout-blockcontainer container container-width-75 w-container">
+                <div class="works-wrapper">
+                    <div class="collection-list-wrapper">
+                        <div class="collection-list">
+                            <div
+                                id="w-node-ef428a4c-283d-4772-73ba-819260d545af-474d1ed4"
+                                data-w-id="ef428a4c-283d-4772-73ba-819260d545af"
+                                class="works-card box-shadow"
+                            >
+                                <div class="works-link">
+                                    <div class="works-image">
+                                        <img
+                                            src="https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6791edbec05d901840872158_img1.jpg"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 87vw, (max-width: 767px) 65vw, (max-width: 991px) 32vw, 34vw"
+                                            srcset="
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6791edbec05d901840872158_img1-p-500.jpg   500w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6791edbec05d901840872158_img1-p-800.jpg   800w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6791edbec05d901840872158_img1-p-1080.jpg 1080w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6791edbec05d901840872158_img1.jpg        1500w
+                                            "
+                                            alt="img 1"
+                                            class="image landscape"
+                                        /><a href="./project-1/" class="works-hover-follow w-inline-block"
+                                            ><div class="font-move">
+                                                <div class="text-weight-medium">View Project</div>
+                                            </div></a
+                                        >
+                                    </div>
+                                    <div class="work-content">
+                                        <a href="./project-1/" class="text-weight-medium caps">SMART GARDEN</a>
+                                        <p class="work-card-paragraph">
+                                            A smart IoT-based system for automating and monitoring family vegetable
+                                            gardens, featuring Raspberry Pico W as the gateway, STM32F103C8T6 (Blue
+                                            Pill) as nodes, Firebase as the Server, and LoRa communication.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                        <div class="success-message w-form-done">
-                            <div class="text-size-contact">Thank you! Your submission has been received!</div>
-                        </div>
-                        <div class="error-message w-form-fail">
-                            <div class="text-size-medium-contact">
-                                Oops! Something went wrong while submitting the form.
+                            <div
+                                id="w-node-_8b58114c-dbd7-c9ff-7e3c-8ead69ff51ed-474d1ed4"
+                                data-w-id="8b58114c-dbd7-c9ff-7e3c-8ead69ff51ed"
+                                class="works-card box-shadow"
+                            >
+                                <div class="works-link">
+                                    <div class="works-image">
+                                        <img
+                                            src="https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67922fa7e5f16602a4b890f9_img1.jpg"
+                                            loading="lazy"
+                                            sizes="(max-width: 479px) 87vw, (max-width: 767px) 65vw, (max-width: 991px) 32vw, 34vw"
+                                            srcset="
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67922fa7e5f16602a4b890f9_img1-p-500.jpg   500w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67922fa7e5f16602a4b890f9_img1-p-800.jpg   800w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67922fa7e5f16602a4b890f9_img1-p-1080.jpg 1080w,
+                                                https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67922fa7e5f16602a4b890f9_img1.jpg        1500w
+                                            "
+                                            alt="img1"
+                                            class="image landscape"
+                                        /><a
+                                            href="https://moorgen-custom-keypad.netlify.app/"
+                                            target="_blank"
+                                            class="works-hover-follow w-inline-block"
+                                            ><div class="font-move">
+                                                <div class="text-weight-medium">View Project</div>
+                                            </div></a
+                                        >
+                                    </div>
+                                    <div class="work-content">
+                                        <a
+                                            href="https://moorgen-custom-keypad.netlify.app/"
+                                            target="_blank"
+                                            class="text-weight-medium caps"
+                                            >Moorgen Custom Keypad</a
+                                        >
+                                        <p class="work-card-paragraph">
+                                            A customer support website, aimed at customizing their dashboard interface.
+                                            This platform allows users to tailor their experience to better meet their
+                                            individual needs. Easy navigation and user-friendly functionality are top
+                                            priorities.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -195,7 +215,7 @@
         <section class="section-footer">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="footer-component">
-                    <div data-w-id="84f705dd-6559-3d3c-26c4-a47a911b695f" style="opacity: 0" class="footer-heading">
+                    <div data-w-id="42b533e1-5712-434c-746d-53fe71be9b8a" style="opacity: 0" class="footer-heading">
                         <img
                             src="https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/67911008443bcf5f6f31fd9a_LoiSG.svg"
                             loading="lazy"
