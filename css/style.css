@@ -1900,7 +1900,7 @@ textarea.w-input, textarea.w-select {
   -webkit-user-select: none;
   user-select: none;
   padding: 18px;
-  font-size: 24px;
+  /* font-size: 24px; */
   display: none;
   position: relative;
 }
@@ -2208,12 +2208,12 @@ blockquote {
   max-width: none;
 }
 
-.container.container-superlarge, .container.container-width-75 {
+.container.container-width-75 {
   width: 75%;
 }
 
-.container.container-width-65 {
-  width: 65%;
+.container.container-width-60 {
+  width: 60%;
 }
 
 .heading-1 {
@@ -2619,8 +2619,8 @@ blockquote {
 }
 
 .big-gap.gap-4-rem {
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 
 .testimonial-wrapper {
@@ -2739,6 +2739,11 @@ blockquote {
 
 .image.univisium {
   aspect-ratio: 2;
+}
+
+.image.padding-img-1rem {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-size-large {
@@ -3228,7 +3233,7 @@ blockquote {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2.5rem 2.8rem;
   display: flex;
 }
 
@@ -3297,6 +3302,23 @@ blockquote {
 
 .work-template-images.no-margin {
   margin-bottom: 0;
+}
+
+.work-template-images.add-margin {
+  margin-bottom: 2rem;
+}
+
+.work-template-images.add-margin.more-negative {
+  margin-top: -1rem;
+}
+
+.work-template-images.add-margin.positive-margin {
+  margin-top: -2rem;
+}
+
+.work-template-images.padding-1rem {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hero-section {
@@ -3786,22 +3808,27 @@ blockquote {
 }
 
 .paragraph-work-content {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   flex-flow: column;
   display: flex;
 }
 
 .list-content {
-  grid-column-gap: .75rem;
-  grid-row-gap: .75rem;
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
   flex-flow: column;
   margin-bottom: 0;
   display: flex;
 }
 
 .work-card-paragraph {
-  text-align: justify;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 991px) {
@@ -4113,7 +4140,7 @@ blockquote {
 
   .menu-button.w--open {
     color: #fbfbfb;
-    background-color: #ee64ff;
+    background-color: var(--color--primary);
   }
 
   .right-navbar-content {
@@ -4384,13 +4411,17 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .container.container-width-75, .container.container-width-65 {
-    width: auto;
+  .container.container-width-75, .container.container-width-60 {
+    width: 90%;
   }
 
   .heading-1 {
@@ -4570,6 +4601,7 @@ blockquote {
   .work-content {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
+    padding-bottom: 2.8rem;
   }
 
   .works-hover-follow {
@@ -4603,6 +4635,10 @@ blockquote {
     position: absolute;
   }
 
+  .menu-icon {
+    display: block;
+  }
+
   .navbar-component {
     padding-top: .2rem;
     padding-bottom: .2rem;
@@ -4633,6 +4669,14 @@ blockquote {
 
   .modal-link {
     flex-flow: wrap;
+  }
+
+  .list-content {
+    padding-left: 20px;
+  }
+
+  .image-2 {
+    display: block;
   }
 }
 
@@ -4668,79 +4712,78 @@ blockquote {
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee1_Satoshi-BoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Light.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee2_Satoshi-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee4_Satoshi-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee0_Satoshi-LightItalic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee5_Satoshi-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Black.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee3_Satoshi-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"),
-      url("../fonts/Satoshi-VariableItalic.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee6_Satoshi-Italic.woff2') format('woff2'), url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1eea_Satoshi-VariableItalic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee8_Satoshi-MediumItalic.woff2') format('woff2');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee7_Satoshi-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2");
+  font-family: 'Satoshi';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1ee9_Satoshi-BlackItalic.woff2') format('woff2');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Satoshi Variable";
-  src: url("../fonts/Satoshi-Variable.woff2") format("woff2");
+  font-family: 'Satoshi Variable';
+  src: url('https://cdn.prod.website-files.com/6790f8ea25bfd6df474d1e7c/6790f8ea25bfd6df474d1eeb_Satoshi-Variable.woff2') format('woff2');
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
